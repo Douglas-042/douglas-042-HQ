@@ -13,6 +13,8 @@ actually matters, and act on it — from one console, with one command per host.
 [![Rules](https://img.shields.io/badge/detections-201%20built--in-22D9F5)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
+<img src="docs/img/dashboard.png" alt="Douglas-042 console — fleet posture at a glance" width="100%">
+
 </div>
 
 ---
@@ -150,6 +152,17 @@ The badge shows the worst verdict with the provider that gave it.
 Free tiers are protected: results cached 12 hours, 40 addresses per run, and a
 daily counter that stops before the provider does. Private addresses are never
 sent.
+
+<p align="center">
+  <img src="docs/img/graph.png" alt="Where a host is talking to" width="58%">
+</p>
+
+The graph is where the difference shows. Above, one host and everything it
+reached — with no reputation key configured, every address is equally grey and
+triage starts with whichever looks busiest, which is nearly always a DNS server
+or a CDN. Add a key and the ordering changes: a confirmed indicator match goes
+first, then reputation score, and a known-good service sinks regardless of how
+many connections it has.
 
 ---
 
