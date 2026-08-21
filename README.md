@@ -1,6 +1,6 @@
 <div align="center">
 
-# Douglas-042
+# Douglas-042 HEADQUARTERS
 
 **Agent-based threat hunting and incident response, for estates that do not have an EDR.**
 
