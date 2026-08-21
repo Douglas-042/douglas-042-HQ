@@ -393,8 +393,9 @@ Version **1.0**. The Windows agent and collector are validated structurally but
 have not been executed in CI — run the first Windows deployment with the
 terminal in view.
 
-See [CHANGES.md](CHANGES.md) for what has been built and the bugs found along
-the way.
+## License
+
+Apache License 2.0 — see [LICENSE](LICENSE).
 
 ---
 
