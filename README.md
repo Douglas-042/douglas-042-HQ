@@ -378,6 +378,10 @@ you which are missing on which host.
 
 ---
 
+📄 **[Technical Report (PDF)](docs/Douglas-042-Technical-Report.pdf)** — 14 pages
+covering the architecture, every console screen, all 37 collector modules, the
+detection model, the response actions and the security model.
+
 
 ## License
 
