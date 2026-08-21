@@ -387,11 +387,6 @@ you which are missing on which host.
 
 ---
 
-## Status
-
-Version **1.0**. The Windows agent and collector are validated structurally but
-have not been executed in CI — run the first Windows deployment with the
-terminal in view.
 
 ## License
 
