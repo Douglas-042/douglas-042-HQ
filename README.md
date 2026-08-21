@@ -2,8 +2,7 @@
 
 # Douglas-042 HEADQUARTERS
 <h1>
-  <img src="docs/img/logo1.png" alt="" height="48" align="absmiddle">
-  Douglas-042
+  <img src="docs/img/logo1.png" alt="" height="90" align="absmiddle">
 </h1>
 **Agent-based threat hunting and incident response, for estates that do not have an EDR.**
 
