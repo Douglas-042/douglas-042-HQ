@@ -1,0 +1,30 @@
+services:
+  console:
+    build: .
+    image: douglas-042:2.1.0
+    container_name: douglas-console
+    restart: unless-stopped
+    ports:
+      - "${DOUGLAS_PORT:-8000}:8000"
+    environment:
+      # Change these before you put this anywhere real.
+      DOUGLAS_CONSOLE_USER:     "${DOUGLAS_CONSOLE_USER:-admin}"
+      DOUGLAS_CONSOLE_PASSWORD: "${DOUGLAS_CONSOLE_PASSWORD:-douglas042}"
+      DOUGLAS_CONSOLE_EMAIL:    "${DOUGLAS_CONSOLE_EMAIL:-admin@localhost}"
+      # Fixed so sessions survive a restart and deploy commands stay stable.
+      DOUGLAS_SESSION_SECRET:   "${DOUGLAS_SESSION_SECRET:-change-me-32-bytes-minimum-please}"
+      DOUGLAS_ENROLLMENT_TOKEN: "${DOUGLAS_ENROLLMENT_TOKEN:-}"
+      # The URL agents call back on. Set this when behind a proxy or NAT.
+      DOUGLAS_PUBLIC_URL:       "${DOUGLAS_PUBLIC_URL:-}"
+      DOUGLAS_AGENT_TIMEOUT:    "${DOUGLAS_AGENT_TIMEOUT:-120}"
+      DOUGLAS_MAX_UPLOAD_MB:    "${DOUGLAS_MAX_UPLOAD_MB:-512}"
+    volumes:
+      - douglas-data:/srv/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=4).status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  douglas-data:

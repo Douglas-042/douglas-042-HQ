@@ -1,0 +1,16 @@
+# Runtime state. Never commit this: it holds the session key, agent
+# credentials, and every finding collected from real hosts.
+data/
+*.db
+*.db-journal
+
+# Local configuration. .env carries the enrolment token, which is a credential
+# — anyone holding it can enrol a host into your console. Commit .env.example
+# instead and let each deployment generate its own.
+.env
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
