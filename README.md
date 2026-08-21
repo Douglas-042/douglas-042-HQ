@@ -1,7 +1,7 @@
 <div align="center">
 
 # Douglas-042 HEADQUARTERS
-
+<img src="docs/img/logo1.png" 
 **Agent-based threat hunting and incident response, for estates that do not have an EDR.**
 
 Sweep a fleet of Windows and Linux hosts for signs of compromise, decide what
