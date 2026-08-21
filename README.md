@@ -4,7 +4,7 @@
 <h1>
   <img src="docs/img/logo1.png" alt="" height="250" align="absmiddle">
 </h1>
-**Agent-based threat hunting and incident response, for estates that do not have an EDR.**
+Agent-based threat hunting and incident response, for estates that do not have an EDR.
 
 Sweep a fleet of Windows and Linux hosts for signs of compromise, decide what
 actually matters, and act on it — from one console, with one command per host.
