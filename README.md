@@ -385,7 +385,7 @@ detection model, the response actions and the security model.
 
 ## License
 
-Apache License 2.0 — see [LICENSE](LICENSE).
+Licensed under the MIT License. See [LICENSE](LICENSE).
 
 ---
 
